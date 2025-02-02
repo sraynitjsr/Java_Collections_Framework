@@ -1,5 +1,6 @@
 package com.sraynitjsr.main;
 
+import com.sraynitjsr.algorithms.MySlidingWindowOne;
 import com.sraynitjsr.basics.MyBasics;
 import com.sraynitjsr.tree.MyTree;
 
@@ -9,6 +10,9 @@ public class MyMain {
 		
 		System.out.println();
 		MyBasics.start();
+		
+		System.out.println();
+		MySlidingWindowOne.start();
 		
 		System.out.println();
 		MyTree.start();

@@ -2,6 +2,7 @@ package com.sraynitjsr.main;
 
 import com.sraynitjsr.basics.*;
 import com.sraynitjsr.conditionalstatements.*;
+import com.sraynitjsr.loops.*;
 
 public class MyMain {
 	public static void main(String[] args) {
@@ -15,5 +16,8 @@ public class MyMain {
 		
 		System.out.println();
 		MyConditionalStatements.start();
+		
+		System.out.println();
+		MyLoops.start();
 	}
 }

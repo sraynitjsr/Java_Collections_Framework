@@ -1,6 +1,6 @@
 package com.sraynitjsr.main;
 
-import com.sraynitjsr.basics.MyBasics;
+import com.sraynitjsr.basics.*;
 
 public class MyMain {
 	public static void main(String[] args) {
@@ -8,5 +8,8 @@ public class MyMain {
 		
 		System.out.println();
 		MyBasics.start();
+		
+		System.out.println();
+		MyDataTypesVariables.start();
 	}
 }

@@ -1,6 +1,7 @@
 package com.sraynitjsr.main;
 
 import com.sraynitjsr.basics.*;
+import com.sraynitjsr.conditionalstatements.*;
 
 public class MyMain {
 	public static void main(String[] args) {
@@ -11,5 +12,8 @@ public class MyMain {
 		
 		System.out.println();
 		MyDataTypesVariables.start();
+		
+		System.out.println();
+		MyConditionalStatements.start();
 	}
 }

@@ -3,6 +3,7 @@ package com.sraynitjsr.main;
 import com.sraynitjsr.basics.*;
 import com.sraynitjsr.conditionalstatements.*;
 import com.sraynitjsr.loops.*;
+import com.sraynitjsr.strings.*;
 import com.sraynitjsr.arrays.*;
 
 public class MyMain {
@@ -20,8 +21,11 @@ public class MyMain {
 //		
 //		System.out.println();
 //		MyLoops.start();
+//		
+//		System.out.println();
+//		MyArrays.start();
 		
 		System.out.println();
-		MyArrays.start();		
+		MyStrings.start();
 	}
 }

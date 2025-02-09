@@ -3,6 +3,7 @@ package com.sraynitjsr.main;
 import com.sraynitjsr.basics.*;
 import com.sraynitjsr.conditionalstatements.*;
 import com.sraynitjsr.loops.*;
+import com.sraynitjsr.streams.*;
 import com.sraynitjsr.strings.*;
 import com.sraynitjsr.arrays.*;
 
@@ -25,7 +26,10 @@ public class MyMain {
 //		System.out.println();
 //		MyArrays.start();
 		
+//		System.out.println();
+//		MyStrings.start();
+		
 		System.out.println();
-		MyStrings.start();
+		MyStreamAPIOne.start();
 	}
 }

@@ -23,9 +23,25 @@ public class MyStreamAPITwo {
 		System.out.println("\nOnly Map Keys:");
 		myHashMap.keySet().stream().forEach(k -> System.out.print(k + " "));
 		System.out.println();
-		
+
 		System.out.println("\nOnly Map Values:");
 		myHashMap.values().stream().forEach(v -> System.out.print(v + " "));
 		System.out.println();
+
+		System.out.println("\nSorting HashMap Using Keys:");
+		myHashMap.keySet().stream().sorted().forEach(k -> System.out.println(k + " " + myHashMap.get(k)));
+
+		System.out.println("\nSorting HashMap Usig Keys Descending:");
+		myHashMap.keySet().stream().sorted(Collections.reverseOrder())
+				.forEach(k -> System.out.println(k + " " + myHashMap.get(k)));
+
+		System.out.println("\nSorting HashMap Using Values:");
+		myHashMap.keySet().stream().sorted(Comparator.comparing(myHashMap::get))
+				.forEach(k -> System.out.println(k + " " + myHashMap.get(k)));
+
+		System.out.println("\nSorting HashMap Using Values:");
+		myHashMap.keySet().stream().sorted(Comparator.comparing(myHashMap::get, Collections.reverseOrder()))
+				.forEach(k -> System.out.println(k + " " + myHashMap.get(k)));
 	}
 }
+

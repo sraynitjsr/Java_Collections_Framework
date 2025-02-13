@@ -35,5 +35,18 @@ public class MyStreamAPIOne {
 
 		System.out.println("\nSum of Odd Numbers Only");
 		System.out.println(myList.stream().filter(num -> num % 2 != 0).reduce(1, (a, b) -> a * b));
+		
+		System.out.println("\nProduct of Numbers:");
+		System.out.println(myList.stream().reduce(1, (a, b) -> a * b));
+
+		System.out.println("\nProduct of Even Numbers Only");
+		System.out.println(myList.stream().filter(num -> num % 2 == 0).reduce(1, (a, b) -> a * b));
 	}
 }
+
+
+
+
+
+
+

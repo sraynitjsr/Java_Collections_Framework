@@ -8,24 +8,32 @@ public class MyStreamAPIOne {
 		System.out.println("Streams API Using Java");
 
 		ArrayList<Integer> myList = new ArrayList<>(Arrays.asList(1, 3, 1, 2, -5, 1, 3, 4));
-		
+
+		System.out.println("\nOriginal List:");
 		System.out.println(myList);
-		
+
+		System.out.println("\nPrinting using stream1:");
 		Stream<Integer> stream1 = myList.stream();
-		
 		stream1.forEach(data -> System.out.print(data + " "));
 		System.out.println();
-		
+
+		System.out.println("\nPrinting using stream2:");
 		Stream<Integer> stream2 = myList.stream();
 		stream2.forEach(System.out::print);
 		System.out.println();
-		
-		System.out.println("Only Even Numbers Are");
+
+		System.out.println("\nOnly Even Numbers Are:");
 		myList.stream().filter(num -> num % 2 == 0).forEach(num -> System.out.print(num + " "));
 		System.out.println();
 
-		System.out.println("Only Odd Numbers Are");
+		System.out.println("\nOnly Odd Numbers Are:");
 		myList.stream().filter(num -> num % 2 != 0).forEach(num -> System.out.print(num + " "));
 		System.out.println();
+
+		System.out.println("\nSum of Numbers:");
+		System.out.println(myList.stream().reduce(0, (a, b) -> a + b));
+
+		System.out.println("\nSum of Odd Numbers Only");
+		System.out.println(myList.stream().filter(num -> num % 2 != 0).reduce(1, (a, b) -> a * b));
 	}
 }

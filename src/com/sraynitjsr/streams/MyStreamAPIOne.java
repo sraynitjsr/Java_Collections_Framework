@@ -41,11 +41,16 @@ public class MyStreamAPIOne {
 
 		System.out.println("\nProduct of Even Numbers Only");
 		System.out.println(myList.stream().filter(num -> num % 2 == 0).reduce(1, (a, b) -> a * b));
+		
+		System.out.println("\nSorting List Using Stream, Ascending");
+		myList.stream().sorted().forEach(val -> System.out.print(val + " "));
+		System.out.println();
+		
+		System.out.println("\nSorting List Using Stream, Descending");
+		myList.stream().sorted(Collections.reverseOrder()).forEach(val -> System.out.print(val + " "));
+		System.out.println();
 	}
 }
-
-
-
 
 
 

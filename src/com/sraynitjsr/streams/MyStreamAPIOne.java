@@ -19,5 +19,13 @@ public class MyStreamAPIOne {
 		Stream<Integer> stream2 = myList.stream();
 		stream2.forEach(System.out::print);
 		System.out.println();
+		
+		System.out.println("Only Even Numbers Are");
+		myList.stream().filter(num -> num % 2 == 0).forEach(num -> System.out.print(num + " "));
+		System.out.println();
+
+		System.out.println("Only Odd Numbers Are");
+		myList.stream().filter(num -> num % 2 != 0).forEach(num -> System.out.print(num + " "));
+		System.out.println();
 	}
 }

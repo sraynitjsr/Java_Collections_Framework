@@ -29,7 +29,10 @@ public class MyMain {
 //		System.out.println();
 //		MyStrings.start();
 		
+//		System.out.println();
+//		MyStreamAPIOne.start();
+		
 		System.out.println();
-		MyStreamAPIOne.start();
+		MyStreamAPITwo.start();
 	}
 }

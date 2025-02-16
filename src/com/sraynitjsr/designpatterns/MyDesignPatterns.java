@@ -6,5 +6,8 @@ public class MyDesignPatterns {
 
 		System.out.println("\nSingleton Design Pattern");
 		MySingleton.start();
+		
+		System.out.println("\nBuilder Design Pattern");
+		MyBuilder.start();
 	}
 }

@@ -1,4 +1,4 @@
-package com.sraynitjsr.conditionalstatements;
+package com.sraynitjsr.ifelse;
 
 public class MyConditionalStatements {
     public static void start() {

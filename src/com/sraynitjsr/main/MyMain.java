@@ -1,7 +1,8 @@
 package com.sraynitjsr.main;
 
 import com.sraynitjsr.basics.*;
-import com.sraynitjsr.conditionalstatements.*;
+import com.sraynitjsr.designpatterns.*;
+import com.sraynitjsr.ifelse.*;
 import com.sraynitjsr.loops.*;
 import com.sraynitjsr.streams.*;
 import com.sraynitjsr.strings.*;
@@ -32,7 +33,10 @@ public class MyMain {
 //		System.out.println();
 //		MyStreamAPIOne.start();
 		
-		System.out.println();
-		MyStreamAPITwo.start();
+//		System.out.println();
+//		MyStreamAPITwo.start();
+		
+		System.out.println("");
+		MyDesignPatterns.start();
 	}
 }

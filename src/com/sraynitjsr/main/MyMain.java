@@ -1,6 +1,7 @@
 package com.sraynitjsr.main;
 
 import com.sraynitjsr.basics.*;
+import com.sraynitjsr.collections.*;
 import com.sraynitjsr.designpatterns.*;
 import com.sraynitjsr.ifelse.*;
 import com.sraynitjsr.loops.*;
@@ -36,7 +37,10 @@ public class MyMain {
 //		System.out.println();
 //		MyStreamAPITwo.start();
 		
-		System.out.println("");
-		MyDesignPatterns.start();
+//		System.out.println("");
+//		MyDesignPatterns.start();
+		
+		System.out.println();
+		MyCollections.start();
 	}
 }
